@@ -123,6 +123,7 @@ main{
     margin-top: 40px;
 }
 .card{
+    width: 200px;
     text-align: center;
     border: 2px solid yellowgreen;
     padding: 15px 15px;
@@ -159,8 +160,8 @@ main{
     .teams-image-container{
         grid-template-columns: 1fr;
     }
-    .teams-content, .some-facts-container
-    {
+    .teams-content, 
+    .some-facts-container{
         padding: 0px 20px;
         text-align: center;
     }
@@ -177,15 +178,23 @@ main{
     header{
         padding:20px;
     }
-    .teams-container{
+    .teams-container,
+    .some-facts-card-container{
         flex-direction: column;
     }
-    .teams-content{
+    .teams-content, .some-facts-container{
         padding: 0px 20px;
         text-align: center;
     }
+    .some-facts-description{
+        width:100%
+    }
+    .some-facts-card-container .card{
+        margin-top: 10px;
+    }
 
 }
+/* latop responsive Screen */
 @media  screen and (min-width:992px) and (max-width:1129px) {
     header{
         padding:50px; 
@@ -193,10 +202,12 @@ main{
     .teams-container{
         flex-direction: column;
     }
-    .teams-content{
+    .teams-content, 
+    .some-facts-container{
         padding: 0px 20px;
         text-align: center;
     }
-
-    
+    .some-facts-description{
+        width:100%
+    }    
 }
