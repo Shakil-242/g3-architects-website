@@ -10,7 +10,7 @@
     font-weight: 600;
     font-size:1.25rem;
     border:none;
-    margin-top: 30px;
+    margin-top: 32px;
 }
 /* header styles */
 header{
@@ -27,7 +27,6 @@ header{
 }
 nav > .nav-container ul{
     display:flex;
-    gap:20px
 
 }
 .nav-title{
@@ -37,6 +36,7 @@ nav > .nav-container ul{
 }
 nav li{
     list-style: none;
+    margin-right: 30px;
 }
 nav li a{
     text-decoration: none;
@@ -68,26 +68,91 @@ nav li a{
     width:100%;
     margin-top: 30px;
 }
+/* main section styles */
+main{
+    max-width: 1140px;
+    margin: 50px auto;
+}
+/* teams section styles */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+}
+.teams-content{
+    padding: 0px 70px;
+}
+.quick-list{
+    color:#727272;
+    font-size: 45px;
+    font-weight: 500; 
+}
+.of-our{
+    color:#131313);
+    font-size: 45px;   
+    font-weight: 700;
+}
+.quick-features{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+.teams-description{
+    max-wdith: 500px;
+    color:#727272;
+    margin-bottom: 0px;
+}
 
 /* Responsive mobile Media Queries */
 @media screen and (max-width: 576px){
     header{
         padding:20px;
     }
-    .nav-container{
+    .nav-container, .teams-container{
         flex-direction: column;
     }
+    nav li{
+        list-style: none;
+        margin-right: 12px;
+    }
+    .teams-image-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding: 0px 20px;
+        text-align: center;
+    }
+    
 }
 /* Tablet or Medium Screen */
 @media  screen and (min-width:576px) and (max-width:992px) {
     header{
-        padding:50px;
+        padding:20px;
     }
-    
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-content{
+        padding: 0px 20px;
+        text-align: center;
+    }
+
 }
 @media  screen and (min-width:992px) and (max-width:1129px) {
     header{
-        padding:50px;
+        padding:50px; 
     }
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-content{
+        padding: 0px 20px;
+        text-align: center;
+    }
+
     
 }
